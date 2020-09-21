@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar-header navbar-light" style="background-color: #232729;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <h1 class="weather-dashboard-title">
+                    Weather Dashboard
+                    <img src="./Assets/11561_Sun.png" style="width:40px;">
+                </h1>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+    
+    <!-- Beginning of main container -->
+    <main class="container-fluid full-width col-md-12">
+        <div class="row">
+
+    <!-- Search Field to the Left -->
+            <div class="col-md-4">
+                <div class="card" id="city-search-card">
+                    <h5 id="city-search-text">Search for a City:</h5>
+
+                    <div class="input-group col-md-12">
+                        <div class="input-group md-form form-sm form-2 pl-0"> 
+
+                            <input class="form-control" type="text" placeholder="Search"  aria-label="Search" id="mysearch">
+
+                            <div class="input-group-addon">
+                                <button class="btn btn-warning btn-sm" type="submit" id="search-btn">
+                                    <i class="fa fa-search">
+
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="list-group">
+                        <li id="sh-0" class="list-group-item"></li>
+                        <li id="sh-1" class="list-group-item"></li>
+                        <li id="sh-2" class="list-group-item"></li>
+                        <li id="sh-3" class="list-group-item"></li>
+                        <li id="sh-4" class="list-group-item"></li>
+                        <li id="sh-5" class="list-group-item"></li>
+                        <li id="sh-6" class="list-group-item"></li>
+                        <li id="sh-7" class="list-group-item"></li></li>
+                    </ul>  
+                </div>
+            </div>    
+    <!-- End of left search field -->
+    
+    <!-- "Atlanta" card to the right -->
+            <div class="col-md-8">                  
+                <div class="card" id='weather-info-card'>
+                    <h3 id="city-name">
+                        
+                        <img id="wicon" alt="Weather Icon"></img>
+                    </h3>
+<br>
+                    <p id="city-temp" class="city-weather-conditions">
+                        Temperature: 
+                    </p>
+                                
+                    <p id="city-humidity" class="city-weather-conditions">
+                        Humidity
+                    </p>
+                        
+                    <p id="city-wind" class="city-weather-conditions">
+                        Wind Speed
+                    </p>
+
+                    <p id="city-uv" class="city-weather-conditions">
+                        UV Index
+                    </p>
+                </div>
+    <!-- End of "Atlanta" card to the right -->
+    
+    <!-- 5-Day Forecast --> 
+                <h3 id="five-day-forecast">
+                    5-Day Forecast
+                </h3>
+<br>
+                <div class="row">               
+                    <div class="card text-white bg-primary mb-2"
+                     style="max-width: 10rem; max-height: 15rem; margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+                        <h6 id='forecastDate1' class="card-header">
+                            
+                        </h6>
+                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <div class="card-body">
+                            <p id='forecastTemp1' class="five-day-temp">
+                                Temp: 
+                            </p>
+                            <p id='forecastHumidity1' class="five-day-humidity">
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-2"
+                     style="max-width: 10rem; max-height: 15rem; margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+                        <h6 id='forecastDate2' class="card-header">
+                            
+                        </h6>
+                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <div class="card-body">
+                            <p id='forecastTemp2' class="five-day-temp">
+                                Temp: 
+                            </p>
+                            <p id='forecastHumidity2' class="five-day-humidity">
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+                            
+                    <div class="card text-white bg-primary mb-2"
+                     style="max-width: 10rem; max-height: 15rem; margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+                        <h6 id='forecastDate3' class="card-header">
+                            
+                        </h6>
+                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <div class="card-body">
+                            <p id='forecastTemp3' class="five-day-temp">
+                                Temp: 
+                            </p>
+                            <p id='forecastHumidity3' class="five-day-humidity">
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-2"
+                     style="max-width: 10rem; max-height: 15rem; margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+                        <h6 id='forecastDate4' class="card-header">
+                            
+                        </h6>                       
+                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">    
+                        <div class="card-body">
+                            <p id='forecastTemp4' class="five-day-temp">
+                                Temp: 
+                            </p>
+                            <p id='forecastHumidity4' class="five-day-humidity">
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card text-white bg-primary mb-2"
+                     style="max-width: 10rem; max-height: 15rem; margin-left: 20px; margin-right: 20px; margin-top: 0px;">
+                        <h6 id='forecastDate5' class="card-header">
+                            
+                        </h6>
+                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <div class="card-body">
+                            <p id='forecastTemp5' class="five-day-temp">
+                                Temp: 
+                            </p>
+                            <p id='forecastHumidity5' class="five-day-humidity">
+                                Humidity:
+                            </p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+    <!-- End of 5-Day Forecast -->
+        </div>
+    </main>
+    <!-- End of main container -->
+
+<script src="./JS/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+</body>
+</html>

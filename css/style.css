@@ -1,0 +1,126 @@
+/* Elements */
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+li {
+  height: 55px;
+}
+
+h3 {
+  margin: 15px;
+}
+
+/* Classes */
+.weather-dashboard-title {
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.col-md-8 {
+  padding: 2px;
+}
+
+.col-md-4 {
+  padding: 2px;
+}
+
+.card {
+  background-color: rgb(228, 226, 226);
+}
+
+.container-fluid {
+  padding: 10px;
+}
+
+.list-group {
+  margin:15px;
+  background-color: lightgray;
+}
+
+.list-group-item {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-group-addon{ 
+  margin-left: -50px; 
+  z-index: 3; 
+  border-radius: 40px; 
+  background-color: transparent; 
+  border:none;
+}
+
+.btn {
+  border-radius: 20px; 
+  margin-top:2.5px; 
+  margin-right:20px;
+}
+
+.city-weather-conditions {
+  margin-left: 20px;
+}
+
+.five-day-forecast-symbol {
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+
+}
+
+/* ID's */
+#search-button-img {
+  width: 24px;
+  height: 24px;
+}
+
+#city-search-text {
+  margin-left:25px;
+  margin-top:20px;
+  margin-bottom:5px;
+}
+
+#five-day-forecast {
+  margin-bottom: 1px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+
+/* Search Button Styling */
+
+#mysearch:focus + .input-group-addon {
+	z-index: 10;
+}
+
+#search-btn:hover {
+	cursor: pointer;
+	/*color: gold;*/
+	background-color: #ffc107;
+}
+
+#mysearch {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding-left: 20px; 
+  border-radius: 40px;
+}
+
+#wicon {
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
