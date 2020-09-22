@@ -52,15 +52,8 @@
                         </div>
                     </div>
 
-                    <ul class="list-group">
-                        <li id="sh-0" class="list-group-item"></li>
-                        <li id="sh-1" class="list-group-item"></li>
-                        <li id="sh-2" class="list-group-item"></li>
-                        <li id="sh-3" class="list-group-item"></li>
-                        <li id="sh-4" class="list-group-item"></li>
-                        <li id="sh-5" class="list-group-item"></li>
-                        <li id="sh-6" class="list-group-item"></li>
-                        <li id="sh-7" class="list-group-item"></li></li>
+                    <ul class="list-group" id="past-searches">
+
                     </ul>  
                 </div>
             </div>    
@@ -69,10 +62,14 @@
     <!-- "Atlanta" card to the right -->
             <div class="col-md-8">                  
                 <div class="card" id='weather-info-card'>
-                    <h3 id="city-name">
-                        
-                        <img id="wicon" alt="Weather Icon"></img>
-                    </h3>
+                    <div class="row" id="city-name-and-icon">
+                        <h3 id="city-name">
+                            
+                        </h3>
+                        <h2 id="city-current-date"></h2>
+                        <img id="wicon" alt="Weather Icon"/>
+                    </div>
+
 <br>
                     <p id="city-temp" class="city-weather-conditions">
                         Temperature: 
@@ -103,7 +100,7 @@
                         <h6 id='forecastDate1' class="card-header">
                             
                         </h6>
-                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <img src='' alt="weather icon" id="forecastIcon1" class="five-day-forecast-symbol"/>
                         <div class="card-body">
                             <p id='forecastTemp1' class="five-day-temp">
                                 Temp: 
@@ -119,7 +116,7 @@
                         <h6 id='forecastDate2' class="card-header">
                             
                         </h6>
-                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <img src="" id="forecastIcon2" class="five-day-forecast-symbol">
                         <div class="card-body">
                             <p id='forecastTemp2' class="five-day-temp">
                                 Temp: 
@@ -135,7 +132,7 @@
                         <h6 id='forecastDate3' class="card-header">
                             
                         </h6>
-                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <img src="" id="forecastIcon3" class="five-day-forecast-symbol">
                         <div class="card-body">
                             <p id='forecastTemp3' class="five-day-temp">
                                 Temp: 
@@ -151,7 +148,7 @@
                         <h6 id='forecastDate4' class="card-header">
                             
                         </h6>                       
-                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">    
+                        <img src="" id="forecastIcon4" class="five-day-forecast-symbol">    
                         <div class="card-body">
                             <p id='forecastTemp4' class="five-day-temp">
                                 Temp: 
@@ -167,7 +164,7 @@
                         <h6 id='forecastDate5' class="card-header">
                             
                         </h6>
-                        <img src="./Assets/11561_Sun.png" class="five-day-forecast-symbol">
+                        <img src="" id="forecastIcon5" class="five-day-forecast-symbol">
                         <div class="card-body">
                             <p id='forecastTemp5' class="five-day-temp">
                                 Temp: 
