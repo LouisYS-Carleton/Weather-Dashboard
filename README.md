@@ -1,6 +1,6 @@
 # Weather-Dashboard
-<img src=“./READMEpic1.jpg” alt="Website Example 1">
-<img src=“./READMEpic2.jpg” alt="Website Example 2">
+<img src=“./Assets/READMEpic1.jpg” alt="Website Example 1">
+<img src=“./Assets/READMEpic2.jpg” alt="Website Example 2">
 
 
 1. When a user enters the website they are met with the current temperature in the website's city of origin.
